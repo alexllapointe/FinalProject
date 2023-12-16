@@ -1,0 +1,81 @@
+<!-- res/layout/order_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Order Number -->
+    <TextView
+        android:id="@+id/textViewOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Item -->
+    <TextView
+        android:id="@+id/textViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item: Burger"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Quantity -->
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 3"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $15"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: 2023-12-15"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 15:30"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: 123 Main St"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Special Instructions -->
+    <TextView
+        android:id="@+id/textViewSpecialInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special Instructions: None"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260627610828",
+    "project_id": "fooddelivery-436fd",
+    "storage_bucket": "fooddelivery-436fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260627610828:android:ef33fbc9148f63283f5669",
+        "android_client_info": {
+          "package_name": "edu.iu.alex.finalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7c_HM9JGOZtpfJv-JXFzKWKPziBky1do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

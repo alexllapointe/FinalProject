@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
+
+    <!-- Global action for AuthFragment -->
+    <action
+        android:id="@+id/action_global_authFragment"
+        app:destination="@id/authFragment" />
+
+    <!-- Global action for RestaurantFragment -->
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/homeFragment" />
+
+    <!-- AuthFragment -->
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="edu.iu.alex.finalproject.AuthFragment"
+        android:label="AuthFragment"
+        app:layout="@layout/auth_fragment">
+        <!-- Action to HomeFragment -->
+        <action
+            android:id="@+id/action_authFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- HomeFragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.iu.alex.finalproject.HomeFragment"
+        android:label="HomeFragment"
+        app:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/homeFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment"/>
+
+        </fragment>
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="edu.iu.alex.finalproject.CheckoutFragment"
+        android:label="CheckoutFragment"
+        app:layout="@layout/checkout_fragment">
+        <action
+            android:id="@+id/checkoutFragment_to_orderFragment"
+            app:destination="@id/orderFragment"/>
+        </fragment>
+
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="edu.iu.alex.finalproject.RestaurantFragment"
+        android:label="RestaurantFragment"
+        app:layout="@layout/restaurant_fragment">
+        <action
+            android:id="@+id/restaurantFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="edu.iu.alex.finalproject.OrderFragment"
+        android:label="OrderFragment"
+        app:layout="@layout/order_fragment" />
+
+
+</navigation>

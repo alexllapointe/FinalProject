@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorLightGray">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Item 1: Burger -->
+        <include layout="@layout/restaurant_menu"
+            android:id="@+id/include_burger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Item 2: Pizza -->
+        <include layout="@layout/restaurant_menu"
+            android:id="@+id/include_pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Item 3: Fries -->
+        <include layout="@layout/restaurant_menu"
+            android:id="@+id/include_fries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCheckout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        android:text="CHECK OUT"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
