@@ -16,33 +16,6 @@
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Item -->
-    <TextView
-        android:id="@+id/textViewItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Item: Burger"
-        android:textSize="16sp"
-        android:layout_marginBottom="4dp"/>
-
-    <!-- Quantity -->
-    <TextView
-        android:id="@+id/textViewQuantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quantity: 3"
-        android:textSize="16sp"
-        android:layout_marginBottom="4dp"/>
-
-    <!-- Price -->
-    <TextView
-        android:id="@+id/textViewPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Price: $15"
-        android:textSize="16sp"
-        android:layout_marginBottom="4dp"/>
-
     <!-- Date -->
     <TextView
         android:id="@+id/textViewDate"

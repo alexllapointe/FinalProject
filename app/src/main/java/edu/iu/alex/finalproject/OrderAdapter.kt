@@ -1,5 +1,6 @@
 package edu.iu.alex.finalproject
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,9 +15,6 @@ class OrderAdapter(private var orders: List<List<String>>) :
 
     class OrderViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val orderNumber: TextView = view.findViewById(R.id.textViewOrderNumber)
-        val item: TextView = view.findViewById(R.id.textViewItem)
-        val quantity: TextView = view.findViewById(R.id.textViewQuantity)
-        val price: TextView = view.findViewById(R.id.textViewPrice)
         val date: TextView = view.findViewById(R.id.textViewDate)
         val time: TextView = view.findViewById(R.id.textViewTime)
         val address: TextView = view.findViewById(R.id.textViewAddress)
@@ -29,16 +27,14 @@ class OrderAdapter(private var orders: List<List<String>>) :
         return OrderViewHolder(view)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: OrderViewHolder, position: Int) {
         val order = orders[position]
 
         // Get the current system date and time
         val currentDateTime = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
 
-        // Populate the TextViews with respective details from the order data
-        holder.date.text = "Date: $currentDateTime"
-        holder.time.text = "Time: $currentDateTime"
-        holder.address.text = "Address: ${order[1]}"
+        holder.address.text = "Address: ${order[0]}"
         holder.specialInstructions.text = "Special Instructions: ${order[1]}"
     }
 

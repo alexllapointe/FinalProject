@@ -54,9 +54,7 @@ class CheckoutFragment : Fragment() {
 
             // Create a list of lists to represent order data
             val orderData = mutableListOf<List<String>>()
-            orderData.add(listOf("Delivery Address", deliveryAddressInfo))
-            orderData.add(listOf("Special Instructions", specialInstructionsInfo))
-            orderData.add(listOf("Orders", orders.joinToString(", ")))
+            orderData.add(listOf(deliveryAddressInfo, specialInstructionsInfo))
 
             // Update the MainViewModel with the order data
             mainViewModel.placeOrder(orderData)

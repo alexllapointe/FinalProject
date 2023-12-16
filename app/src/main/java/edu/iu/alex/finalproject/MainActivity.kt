@@ -66,6 +66,14 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> {
                     findNavController(R.id.nav_host_fragment).navigate(R.id.action_global_homeFragment)
                 }
+                R.id.nav_calendar -> {
+                    // Handle navigation to the CalendarFragment
+                    findNavController(R.id.nav_host_fragment).navigate(R.id.action_global_calendarFragment)
+                }
+                R.id.nav_recent_orders -> {
+                    // Handle navigation to the RecentOrdersFragment
+                    findNavController(R.id.nav_host_fragment).navigate(R.id.action_global_recentOrdersFragment)
+                }
                 // Handle other menu items if needed
             }
             true

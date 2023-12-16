@@ -9,6 +9,15 @@
         android:id="@+id/action_global_authFragment"
         app:destination="@id/authFragment" />
 
+    <action
+        android:id="@+id/action_global_recentOrdersFragment"
+        app:destination="@id/orderFragment" />
+
+    <action
+        android:id="@+id/action_global_calendarFragment"
+        app:destination="@id/calendarFragment"
+        />
+
     <!-- Global action for RestaurantFragment -->
     <action
         android:id="@+id/action_global_homeFragment"
@@ -62,7 +71,19 @@
         android:id="@+id/orderFragment"
         android:name="edu.iu.alex.finalproject.OrderFragment"
         android:label="OrderFragment"
-        app:layout="@layout/order_fragment" />
+        app:layout="@layout/order_fragment">
+        <action
+            android:id="@+id/orderFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="edu.iu.alex.finalproject.CalendarFragment"
+        android:label="CalendarFragment"
+        app:layout="@layout/calendar_fragment">
+    </fragment>
 
 
 </navigation>
